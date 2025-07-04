@@ -6,8 +6,8 @@ import random
 import time
 import re
 
-API_TOKEN = '8138595564:AAHsKQe-JIAJ8FKsIq_JuPuhi0IIZaPQOIo'
-LOG_CHANNEL = -4645295866  # Log kanalının ID-sini dəyiş
+API_TOKEN = 'Bot_Token_Buraya_Yaz'
+LOG_CHANNEL = -52617179362  # Log kanalının ID-sini dəyiş
 ADMINS = [7926847490]  # Admin ID-lərini əlavə et
 
 bot = TeleBot(API_TOKEN, parse_mode=None)
