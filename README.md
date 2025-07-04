@@ -1,0 +1,2 @@
+# NihadRobot
+İcazəsiz götürən peyserdi
