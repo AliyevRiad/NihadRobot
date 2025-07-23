@@ -63,12 +63,14 @@ def check_links(text):
 def create_start_markup():
     markup = types.InlineKeyboardMarkup()
     markup.row(
-        types.InlineKeyboardButton("📤 Support", url="https://t.me/QrupBotlar"),
-        types.InlineKeyboardButton("➕ Məni qrupuna əlavə et", url=f"https://t.me/{bot.get_me().username}?startgroup=true")
+        types.InlineKeyboardButton("➕ Məni qrupuna əlavə et", url="https://t.me/{bot.get_me().username}?startgroup=true")
+    )
+    markup.row(
+        types.InlineKeyboardButton("📤 Support", url=f"https://t.me/PersionalSupport")
     )
     markup.row(
         types.InlineKeyboardButton("📚 Əmrlər", callback_data="commands"),
-        types.InlineKeyboardButton("🧑‍💻 Sahibim", url="https://t.me/AliyevRiad")
+        types.InlineKeyboardButton("🧑‍💻 Sahibim", url="https://t.me/PersionalTeamBot")
     )
     markup.row(
         types.InlineKeyboardButton("ℹ️ Bot haqqında", callback_data="about")
@@ -78,7 +80,7 @@ def create_start_markup():
 def get_start_caption(user_name):
     return (
         f"👩‍⚕ Salam {user_name}\n"
-        f"🪬 Mənim adım ＮＩＨ么Ｄ\n"
+        f"🪬 Mənim adım 𝐏𝐞𝐫𝐬𝐢𝐨𝐧𝐚𝐥 𝐌𝐮𝐥𝐭𝐢 𝐁𝐨𝐭\n"
         f"🇦🇿 Azərbaycan dilində multi funksiyalı telegram botuyam\n"
         f"🛠 Bacarıqlarımı görmək üçün 📚 əmrlər buttonuna daxil olun"
     )
@@ -94,7 +96,7 @@ def start(message):
             chat_name = message.chat.title or "Bu Qrup"
             group_message = (
                 f"╔═════════════════\n"
-                f"║▻ 🙎‍♀️️️️️️️️ ＮＩＨ么Ｄ {chat_name} Qrupunda Əla şəkildə stabil işləyir  🥳\n"
+                f"║▻ 🙎‍♀️️️️️️️️ 𝐏𝐞𝐫𝐬𝐢𝐨𝐧𝐚𝐥 {chat_name} Qrupunda Əla şəkildə stabil işləyir  🥳\n"
                 f"╚═════════════════"
             )
             bot.send_message(chat_id, group_message)
@@ -132,11 +134,11 @@ def callback_query(call):
                 "╔═════════════════\n"
                 f"║▻ 🙋‍♀️ Salam {call.from_user.first_name}\n"
                 "║\n"
-                "║▻ 🙎‍♀️ ＮＩＨ么Ｄ 🇦🇿 Çox Özəllikli Telegram Botudur...\n"
+                "║▻ 🙎‍♀️ 𝐏𝐞𝐫𝐬𝐢𝐨𝐧𝐚𝐥 🇦🇿 Çox Özəllikli Telegram Botudur...\n"
                 "║▻ 🐍 Python: 3.9.12\n"
                 "║▻ 📚 TeleBot: 4.x\n"
                 "║▻ ⚙️ Server: Replit VPS\n"
-                "║▻ 👨‍💻 Sahib: @AliyevRiad\n"
+                "║▻ 👨‍💻 Sahib: @PersionalTeamBot\n"
                 "║▻ 📆 Start tarixi: 16.06.2025\n"
                 "╚════════════════"
             )
@@ -365,7 +367,7 @@ def callback_query(call):
                 "🔸 /id - İstifadəçi ID-sini göstərir\n"
                 "   ↳ İstifadə: /id\n\n"
                 "🔸 /info - Ətraflı istifadəçi məlumatı\n"
-                "   ↳ İstifadə: /info (reply/ID/@username)\n\n"
+                "   ↳ İstifadə: /info (reply/ID/@uosername)\n\n"
                 "🔸 /alive - Botun aktiv olduğunu göstərir\n"
                 "   ↳ İstifadə: /alive\n\n"
                 "✅ Bu əmrləri hər kəs istifadə edə bilər"
@@ -1535,7 +1537,7 @@ def welcome_new_member(message):
             markup = types.InlineKeyboardMarkup()
             markup.add(
                 types.InlineKeyboardButton("📚 Komandalar", callback_data="commands"),
-                types.InlineKeyboardButton("🧑‍💻 Sahibim", url="https://t.me/AliyevRiad")
+                types.InlineKeyboardButton("🧑‍💻 Sahibim", url="https://t.me/PersionalTeamBot")
             )
             
             bot.send_message(
