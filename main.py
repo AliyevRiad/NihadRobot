@@ -17,7 +17,7 @@ filters = {}    # chat_id: {word: reply_text}
 message_counts = {}  # chat_id: {user_id: count}
 last_start_users = set()  # start spam qarşısı üçün
 
-START_IMAGE = 'https://imgur.com/a/plwAxK2'
+START_IMAGE = 'https://files.catbox.moe/e083zz.jpg'
 
 # ----------- Helper funksiyalar -------------
 
